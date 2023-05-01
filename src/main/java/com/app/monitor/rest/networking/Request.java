@@ -7,6 +7,7 @@ import java.time.ZonedDateTime;
 public class Request {
 
     private String id;
+    private String processId;
     private String path;
     private int statusCode;
     private String method;
@@ -20,6 +21,15 @@ public class Request {
 
     public Request setId(String id) {
         this.id = id;
+        return this;
+    }
+
+    public String getProcessId() {
+        return processId;
+    }
+
+    public Request setProcessId(String processId) {
+        this.processId = processId;
         return this;
     }
 
